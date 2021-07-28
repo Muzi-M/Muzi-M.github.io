@@ -435,9 +435,9 @@ header {
 }
 
 .code__skills-skill {
-    margin: 0 .02em;
+    margin: 0 1em;
 }
 
 .code__skills-item {
-    padding: 1em
+    padding: .2em
 }
