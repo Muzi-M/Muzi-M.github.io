@@ -428,7 +428,7 @@ header {
 @media (min-width: 800px) {
     .code__skills {
         list-style: none;
-        display: flex !important;
+        display: flex;
         justify-content: center;
         margin: .5em 0 0;
         padding: 0;
