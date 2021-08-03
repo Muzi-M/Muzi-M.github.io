@@ -425,10 +425,14 @@ header {
     margin-bottom: 0em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
+    .service {
+        display: table;
+    }
     .code__skills {
-        list-style: none;
+        list-style: inherit;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         margin: .5em 0 0;
         padding: 0;
@@ -438,6 +442,7 @@ header {
     
     .code__skills-skill {
         margin: 0 1em 0 1em;
+        display: flex;
     }
     
     .code__skills-item {
