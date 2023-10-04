@@ -267,10 +267,6 @@ header {
     left: -1.5em;
     width: calc(100% + 1.5em);
   }
-
-  .project-list {
-    display: grid;
-  }
 }
 .my-services {
   background-color: var(--clr-dark);
@@ -480,4 +476,20 @@ header {
 
 .project__list:hover .overlay-content h3 {
   color: #16e0bd;
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project__list {
+    margin-bottom: 20px;
+  }
+
+  .project__list img {
+    width: 100%;
+    height: auto;
+  }
 }
