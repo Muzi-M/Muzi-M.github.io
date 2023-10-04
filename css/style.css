@@ -447,3 +447,33 @@ header {
     padding: 0.2em;
   }
 }
+
+.work ul {
+  list-style-type: none;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project__list {
+  text-decoration: none;
+  text-align: center;
+}
+
+.project__list img {
+  width: 380px;
+  height: 295px;
+  border-radius: 5%;
+  box-shadow: 0 5px 10px rgb(137, 135, 135);
+}
+
+.overlay-content h3 {
+  color: white;
+  margin-top: 3%;
+}
+
+.project__list:hover .overlay-content h3 {
+  color: #16e0bd;
+}
