@@ -267,6 +267,10 @@ header {
     left: -1.5em;
     width: calc(100% + 1.5em);
   }
+
+  .project-list {
+    display: grid;
+  }
 }
 .my-services {
   background-color: var(--clr-dark);
