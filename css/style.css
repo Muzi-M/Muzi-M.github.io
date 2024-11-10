@@ -350,28 +350,123 @@ header {
   background-color: var(--clr-accent) !important;
 }
 
+/* Portfolio Section Styling */
 .my-work {
-  background-color: var(--clr-dark);
-  background-image: url("workdesk.jpg");
-  background-blend-mode: multiply;
-  color: var(--clr-white);
+  padding: 2em 0;
+  background-color: #f4f4f9;
+}
+
+.section__title--work {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+/* Portfolio Categories */
+.portfolio-category {
+  margin-bottom: 3em;
   text-align: center;
 }
-.section__title--work {
-  color: var(--clr-accent);
+
+.portfolio-category h3 {
+  font-size: 1.5rem;
+  color: #c9b26c;
+  margin-bottom: 1em;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+/* Project List Styling */
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.project__list {
   position: relative;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
 }
-.section__title--work::after {
-  content: "";
-  display: block;
-  width: 2em;
-  height: 1px;
-  margin: 0.5em auto 1em;
-  background: var(--clr-white);
-  opacity: 0.25;
+
+.project__list img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/9; /* Ensures consistent aspect ratio */
+  transition: transform 0.3s ease;
 }
-.work {
-  margin: 4em;
+
+/* Hover Effects */
+.project__list:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.project__list:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project__list:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project__list img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Center the Download CV button */
+.btn-container {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.btn {
+  display: inline-block;
+}
+
+/* Center the Download CV button */
+#work .btn {
+  display: inline-block;
+  margin: 2em auto 0;
+  text-align: center;
 }
 
 .footer {
